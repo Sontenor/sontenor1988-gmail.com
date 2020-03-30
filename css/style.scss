@@ -1,0 +1,310 @@
+body {
+	font-family: "Gilroy-Regular";
+}
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	display: inline-block;
+}
+
+li {
+	list-style: none;
+	display: inline-block;
+}
+
+input:focus {
+	outline: none;
+}
+
+// variable
+
+%btnhover {
+	box-shadow: 0px 8px 12px -8px #ffd956;
+	color: #fff;
+}
+
+%btnstyle {
+	background-color: #ffd956;
+	border: none;
+	padding: 20px 0;
+	font-size: 18px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: .3s;
+}
+
+%style {
+	color: #233a54;
+	font-weight: 600;
+}
+%titlestyle {
+	color: #132b47;
+	font-family: "Gilroy-ExtraBold";
+	font-size: 44px;
+	letter-spacing: 1.1px;
+	text-align: center;
+}
+
+// end variable
+
+.container {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin: 0 auto;
+
+	@media screen and (min-width: 576px) {
+		width: 540px;
+	}
+	@media screen and (min-width: 768px) {
+		width: 720px;
+	}
+	@media screen and (min-width: 992px) {
+		width: 960px;
+	}
+	@media screen and (min-width: 1200px) {
+		width: 1101px;
+	}
+
+	&__wrapper {
+		border-bottom: 1px solid #eef0f3;
+		padding-bottom: 16px;
+	}
+}
+
+
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 28px;
+
+	&__nav {
+		margin: 8px 0;
+	}
+
+	&__locationImg {
+		margin-bottom: -3px;
+	}
+
+	&__locationLink {
+		border-bottom: 1px dashed #acb0b4;
+		color: #acb0b4;
+	}
+
+	&__masters {
+		padding-left: 35px;
+
+		&Img {
+			margin-bottom: -1px;
+			padding-right: 5px;
+		}
+
+		&Link {
+			@extend %style;
+		}
+	}
+
+	&__orders {
+		padding-left: 20px;
+
+		&Link {
+			@extend %style;
+		}
+
+		&Img {
+			margin-bottom: -4px;
+			padding-right: 3px;
+		}
+	}
+
+	&__creat {
+		padding-left: 35px;
+
+		&Link {
+			width: 174px;
+			background-color: #ffd956;
+			border-radius: 5px;
+			text-align: center;
+			padding: 13px 0;
+			transition: .3s;
+			@extend %style;
+
+		&:hover {
+			@extend %btnhover;
+		}
+		}
+	}
+
+	&__entrance {
+		padding-left: 43px;
+
+		&Link {
+			border: 2px solid #ffd956;
+			padding: 11px;
+			border-radius: 5px;
+			@extend %style;
+			transition: .3s;
+
+		&:hover {
+			@extend %btnhover;
+			background-color: #ffd956;
+		}
+		}
+	}
+
+	&__registration {
+		padding-left: 22px;
+
+		&Link {
+			color: #acb0b4;
+			border-bottom: 1px dashed;
+		}
+	}
+}
+
+.banner {
+	background: url(../img/Layer_10.jpg) no-repeat;
+	background-size: cover ;
+	padding-bottom: 275px;
+
+	&__man {
+		position: absolute;
+		left: 124px;
+		top: 154px;
+	}
+
+	&__title {
+		color: #132b47;
+		font-family: "Gilroy-ExtraBold";
+		font-size: 44px;
+		letter-spacing: 1.1px;
+		text-align: center;
+		padding-top: 54px;
+	}
+
+	&__content {
+		margin-top: 300px;
+		position: relative;
+		background: #fff;
+		border-radius: 5px;
+	}
+
+	&__info {
+	padding: 15px 0 54px 48px;
+	@extend %style;
+
+		&Link{
+			color: #b3bfc9;
+			border-bottom: 1px dashed;
+		}
+	}
+}
+
+
+.form {
+	text-align: center;
+
+	&__input {
+		width: 397px;
+		padding: 20px 0 20px 48px;
+		margin-right: 20px;
+		color: #b3bfc9;
+		font-size: 18px;
+		font-weight: 600;
+		border-radius: 5px;
+		background: url(../img/icon/search-icon-1.png) no-repeat;
+		background-color: #eaeff3;
+		background-position: 15px;
+		border: none;
+	}
+
+	&__button {
+		background-color: #ffd956;
+		border: none;
+		width: 134px;
+		padding: 20px 0;
+		font-size: 18px;
+		border-radius: 5px;
+		@extend %style;
+		cursor: pointer;
+		transition: .3s;
+
+		&:hover {
+			@extend %btnhover;
+		}
+
+		&:focus {
+			outline: none;
+		}
+	}
+}
+
+	.Geo {
+		background: url(../img/icon/search-icon-2.png) no-repeat;
+		background-color: #eaeff3;
+		background-position: 19px;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+::-webkit-input-placeholder {color:#b3bfc9;}
+::-moz-placeholder          {color:#b3bfc9;}
+:-moz-placeholder           {color:#b3bfc9;}
+:-ms-input-placeholder      {color:#b3bfc9;}
+
+input::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+input::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+input:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+input:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import "fonts.scss";
+@import "mobile.burger.scss";
+@import "service.scss";
+@import "work.scss";

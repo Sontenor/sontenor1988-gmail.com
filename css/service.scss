@@ -1,0 +1,143 @@
+.service__title {
+	@extend %titlestyle;
+	margin: 0;
+	padding: 100px 0 30px;
+}
+
+.service__subtitle {
+	color: #132b47;
+	font-size: 30px;
+	font-weight: 300;
+	text-align: center;
+	padding-bottom: 71px;
+	margin: 0;
+
+	&-bolt {
+		font-family: "Gilroy-ExtraBold";
+	}
+}
+
+.service__box {
+	display: flex;
+	flex-direction: column;
+	width: 32%;
+	& a {
+		color: #81909d;
+		line-height: 36px;
+		transition: .3s;
+
+		&:hover {
+			color: #132b47;
+		}
+	}
+
+	&-bolt {
+		font-family: "Gilroy-ExtraBold";
+		color: #132b47 !important;
+		font-size: 20px;
+		letter-spacing: -0.5px;
+
+		&:hover {
+			text-shadow: 0px 1px 14px black;
+		}
+	}
+
+	&-numeral {
+		color: #f7b958;
+		font-size: 18px;
+		font-weight: 700;
+		padding-left: 17px;
+	}
+
+	&-yet {
+		color: #f7b958;
+	}
+}
+
+.service__content,.service__content-item {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.service__content {
+	padding-bottom: 72px;
+}
+
+.service__content-item .active {
+	display: block;
+}
+
+.item1 {
+	border-right: 1px solid #e6eaed;
+	border-bottom: 1px solid #E6EAED;
+	padding-bottom: 44px;
+}
+.item2 {
+	border-right: 1px solid #e6eaed;
+	border-bottom: 1px solid #e6eaed;
+	padding: 0px 0 45px 47px;
+}
+
+.item3 {
+	border-bottom: 1px solid #e6eaed;
+	margin-right: 42px;
+	padding: 0px 0 45px 47px;
+}
+
+.item4 {
+	border-right: 1px solid #e6eaed;
+	border-bottom: 1px solid #e6eaed;
+	padding: 43px 0 45px 0px;
+}
+
+.item5 {
+	border-bottom: 1px solid #e6eaed;
+	border-right: 1px solid #e6eaed;
+	padding: 43px 0 45px 47px;
+}
+
+.item6 {
+	border-bottom: 1px solid #e6eaed;
+	margin-right: 42px;
+	padding: 43px 0 45px 47px;
+}
+
+.item7 {
+	border-right: 1px solid #e6eaed;
+	padding: 43px 0 0px 0px;
+}
+
+.item8 {
+	border-right: 1px solid #e6eaed;
+	padding: 43px 0 0px 47px;
+}
+
+.item9 {
+	margin-right: 42px;
+	padding: 43px 0 0px 47px;
+}
+
+.service__section {
+	background-color: #f8f8fa;
+}
+
+.button-wrapper {
+	text-align: center;
+	padding: 62px 0 84px;
+
+	.button {
+		width: 219px;
+		@extend %btnstyle;
+		color: #132b47;
+		font-weight: 700;
+		letter-spacing: 0.45px;
+
+		&:hover {
+			@extend %btnhover;
+		}
+	}
+}
+
+
+

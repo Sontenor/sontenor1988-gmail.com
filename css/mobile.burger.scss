@@ -1,0 +1,45 @@
+.burger {
+	display: none;
+	width: 50px;
+	height: 30px;
+	cursor: pointer;
+	position: relative;
+
+	&__line {
+		display: block;
+		width: 100%;
+		height: 5px;
+		background-color: #000;
+		position: absolute;
+		left: 0;
+		transition: .3s;
+	}
+
+	&__line_first {
+		top: 0;
+	}
+
+	&__line_second, &__line_third {
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	&__line_fourth {
+		bottom: 0;
+	}
+
+	&_active &__line_first, &_active &__line_fourth {
+		opacity: 0;
+	}
+
+	&_active &__line_second {
+		transform: translateY(-50%) rotate(45deg);
+	}
+
+	&_active &__line_third {
+		transform: translateY(-50%) rotate(-45deg);
+	}
+}
+
+
+
