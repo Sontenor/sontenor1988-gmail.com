@@ -408,11 +408,16 @@ input:focus:-ms-input-placeholder {
     letter-spacing: 0.45px; }
 
 .section {
-  background: url(../img/bg-work.png);
-  position: relative; }
+  background: url(../img/bg-work.png) no-repeat;
+  background-size: cover; }
   .section .work {
-    position: absolute;
-    top: 0; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
     .section .work__item1 {
       width: 36%;
       display: inline-block; }
@@ -424,7 +429,9 @@ input:focus:-ms-input-placeholder {
       font-family: "Gilroy-ExtraBold";
       font-size: 44px;
       font-weight: 400;
-      letter-spacing: 1.1px; }
+      letter-spacing: 1.1px;
+      margin: 0;
+      padding: 104px 0 114px; }
     .section .work__subtitle {
       color: #132b47;
       font-size: 24px;

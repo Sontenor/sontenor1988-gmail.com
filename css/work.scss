@@ -1,10 +1,10 @@
 .section {
-	background: url(../img/bg-work.png);
-	position: relative;
+	background: url(../img/bg-work.png) no-repeat;
+	background-size: cover;
 
 	.work {
-		position: absolute;
-		top: 0;
+		display: flex;
+		flex-direction: column;
 
 		&__item1 {
 			width: 36%;
@@ -22,6 +22,8 @@
 			font-size: 44px;
 			font-weight: 400;
 			letter-spacing: 1.1px;
+			margin: 0;
+			padding: 104px 0 114px;
 		}
 
 		&__subtitle {
