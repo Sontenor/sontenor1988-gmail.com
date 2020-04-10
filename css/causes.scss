@@ -1,0 +1,55 @@
+.section__causes {
+	background:url(../img/causes-bg.png) no-repeat;
+	background-size: cover;
+
+	h2 {
+		@extend %titlestyle;
+		padding-top: 115px;
+	}
+
+	.causes {
+		display: flex;
+		justify-content: space-around;
+		padding-top: 94px;
+
+		&__icon-item {
+			padding-bottom: 7px;
+		}
+
+		&__card {
+			width: 29%;
+			text-align: center;
+		}
+
+		&__subtitle {
+			color: #132b47;
+			font-size: 20px;
+			font-family: "Gilroy-ExtraBold";
+			letter-spacing: 0.5px;
+			padding: 50px 0 35px 0;
+		}
+
+		&__text {
+			color: #53616d;
+			line-height: 30px;
+		}
+
+		&__button {
+			text-align: center;
+			padding: 94px 0 104px 0;
+
+			a {
+				width: 245px;
+				color: #132b47;
+				font-size: 18px;
+				font-weight: 700;
+				letter-spacing: 0.45px;
+				@extend %btnstyle;
+
+				&:hover {
+					@extend %btnhover;
+				}
+			}
+		}
+	}
+}

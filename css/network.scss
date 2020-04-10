@@ -1,0 +1,21 @@
+.network {
+	background:url(../img/bg__network.png) no-repeat;
+	border: 1px solid #e9ebef;
+
+	h2 {
+		@extend %titlestyle;
+		padding: 121px 0 64px 0;
+	}
+
+	&__block {
+		width: 331px;
+		height: 506px;
+		background-color: #ecf2f5;
+	}
+
+	&__blocks {
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 123px;
+	}
+}

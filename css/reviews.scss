@@ -1,0 +1,155 @@
+.section__reviews {
+	background-color: #fcfcfd;
+}
+
+.reviews__title {
+	color: #132b47;
+	font-family: "Gilroy-ExtraBold";
+	letter-spacing: 1.1px;
+	font-size: 44px;
+	text-align: center;
+	padding-bottom: 40px;
+}
+
+.reviews__subtitle {
+	text-align: center;
+	color: #2a3f59;
+	font-size: 30px;
+	line-height: 40px;
+
+	span {
+		font-family: "Gilroy-ExtraBold";
+	}
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 66px
+}
+
+.box {
+	width: 531px;
+	background-color: #fff;
+	color: #95a1ac;
+	font-weight: 600;
+	margin-bottom: 33px;
+	box-shadow: 13px 22px 81px rgba(177, 189, 196, 0.2);
+
+	span {
+		color: #4c5e73;
+		font-weight: 600;
+	}
+
+	&__text {
+		padding: 22px 0 26px 30px;
+		width: 87%;
+		color: #4c5e73;
+		font-family: Gilroy-SemiBoldItalic;
+	}
+
+	&__master {
+		border-bottom: 1px solid #ecf0f4;
+		padding-bottom: 31px;
+
+		&-img {
+			margin-bottom: -53px;
+		}
+	}
+
+	&__assessment {
+		border-top: 1px solid #ecf0f4;
+		border-bottom: 1px solid #ecf0f4;
+		padding: 18px 28px;
+		font-size: 15px;
+
+		.assessment {
+			display: inline-block;
+		}
+	}
+
+	&__footer {
+		font-size: 15px;
+		padding: 0 0 28px 28px;
+
+		&-customer {
+			line-height: 40px;
+		}
+
+		&-review {
+			display: inline-block;
+			padding-right: 38px;
+		}
+
+		&-cost {
+			display: inline-block;
+		}
+	}
+
+	&__button {
+		width: 248px;
+		color: #2b3d48;
+		font-weight: 700;
+		@extend %btnstyle;
+
+		&:hover {
+			@extend %btnhover;
+		}
+
+		&-wrapper {
+			text-align: center;
+			padding: 56px 0 67px 0;
+		}
+	}
+}
+
+.box__master-Wrapper {
+	display: inline-block;
+
+	span {
+		border: 1px solid;
+		border-radius: 5px;
+		padding: 7px 12px 6px 14px;
+		color: #eda822;
+		letter-spacing: 0.4px;
+		font-weight: 600;
+		margin-left: 17px;
+	}
+}
+
+.box__master-confidence {
+	color: #95a1ac;
+	letter-spacing: 0.4px;
+	font-weight: 600;
+}
+
+.box__master-name {
+	color: #132b47;
+	font-size: 20px;
+	letter-spacing: 0.5px;
+	font-family: "Gilroy-ExtraBold";
+}
+
+.box__master-info {
+	color: #95a1ac;
+	letter-spacing: 0.4px;
+	font-weight: 600;
+	line-height: 40px;
+}
+
+.box__master-index {
+	color: #95a1ac;
+	letter-spacing: 0.4px;
+	font-weight: 600;
+
+	span {
+		border: 1px solid;
+		border-radius: 3px;
+		padding: 7px 12px 6px 14px;
+		color: #eda822;
+		letter-spacing: 0.4px;
+		margin-left: 17px;
+		line-height: 28px;
+	}
+}
